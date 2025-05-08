@@ -1,6 +1,3 @@
-
-
-
 def winning_line(strings):
     strings = set(strings)
     return len(strings) == 1 and ' ' not in strings

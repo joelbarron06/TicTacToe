@@ -25,11 +25,25 @@ def format_board(board):
 
 def play_move(board, player):
     print(f'{player} to play:')
-    row = int(input()) - 1
-    col = int(input()) - 1
-    board[row][col] = player
-    print(format_board(board))
+    row = int(input("Row: ")) - 1
+    col = int(input("Column: ")) - 1
+    if check_legal(board, row, col):
+        board[row][col] = player
+        print(format_board(board))
+    else:
+        play_move(board, player)
 
+def check_legal(board, row, col):
+    try:
+        if board[row][col] == ' ':
+            return True
+        else:
+            print("Illegal move, try again.")
+            return False
+    except IndexError:
+        print("Invalid position, try again.")
+        return False
+    
 def make_board(size):
     return [[' '] * size for _ in range(size)]
 

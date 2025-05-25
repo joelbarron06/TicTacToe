@@ -59,7 +59,7 @@ def play_game(board_size, player1, player2):
 
     
     a = 0
-    while 0<1:
+    while True:
         play_move(board, player1)
         a += 1
         if winner(board):

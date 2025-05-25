@@ -78,3 +78,7 @@ def play_game(board_size, player1, player2):
             break
         
 play_game(3, 'X', 'O')
+
+# This code implements a simple console-based Tic-Tac-Toe game for two players. 
+#Future improvements could include:
+# - Making a 'bot' player that plays automatically: different difficulty levels could be implemented

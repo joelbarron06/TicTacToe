@@ -11,6 +11,8 @@ def column_winner(board):
 def main_diagonal_winner(board):
     return winning_line(row[i] for i, row in enumerate(board))
 
+#enumurate is a command i got from workshop example, it returns a tuple of index and value
+
 def diagonal_winner(board):
     return main_diagonal_winner(board) or main_diagonal_winner(reversed(board))
 

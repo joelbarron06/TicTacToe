@@ -27,8 +27,12 @@ def format_board(board):
 
 def play_move(board, player):
     print(f'{player} to play:')
-    row = int(input("Row: ")) - 1
-    col = int(input("Column: ")) - 1
+    try:
+        row = int(input("Row: ")) - 1
+        col = int(input("Column: ")) - 1
+    except ValueError:
+        print("Invalid input, please enter numbers only.")
+        return play_move(board, player)
     if check_legal(board, row, col):
         board[row][col] = player
         print(format_board(board))

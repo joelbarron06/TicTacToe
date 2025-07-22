@@ -1,0 +1,42 @@
+{
+  "Joel": {
+    "username": "Joel",
+    "balance": 200.0,
+    "total_deposited": 100.0,
+    "total_bet": 200.0,
+    "total_won": 300.0,
+    "games_played": 6,
+    "games_won": 4,
+    "created_date": "2025-06-24T12:25:36.719560"
+  },
+  "Steve": {
+    "username": "Steve",
+    "balance": 40.0,
+    "total_deposited": 20.0,
+    "total_bet": 20.0,
+    "total_won": 40.0,
+    "games_played": 1,
+    "games_won": 1,
+    "created_date": "2025-06-24T12:28:24.405038"
+  },
+  "steve": {
+    "username": "steve",
+    "balance": 0.0,
+    "total_deposited": 20.0,
+    "total_bet": 20.0,
+    "total_won": 0,
+    "games_played": 1,
+    "games_won": 0,
+    "created_date": "2025-06-25T22:05:13.939972"
+  },
+  "": {
+    "username": "",
+    "balance": 100.0,
+    "total_deposited": 100.0,
+    "total_bet": 0,
+    "total_won": 0,
+    "games_played": 0,
+    "games_won": 0,
+    "created_date": "2025-06-28T19:03:49.572695"
+  }
+}
